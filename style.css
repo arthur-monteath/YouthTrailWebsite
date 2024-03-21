@@ -1,6 +1,6 @@
 html
 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Helvetica;
 }
 
 h1{
@@ -60,7 +60,7 @@ header img
 .circle text {
     font-size: 1.25em;
     font-weight: 600;
-    letter-spacing: 0.325em;
+    letter-spacing: 0.31em;
 }
 
 path {
