@@ -3,13 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=7, initial-scale=1.0">
-    
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
 
     <title>Trails of Youth Development</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
     
+    <header>
+        <svg viewBox="0 0 200 200" class="circle">
+            <path id="curve" d="
+            M 100, 100
+            m 75, 0
+            a 75,75 0 1,0 -150,0
+            a 75,75 0 1,0  150,0"/>
+            <text width="200">
+            <textPath startOffset="0%" xlink:href="#curve">
+                Trails of Youth Development
+            </textPath>
+            </text>
+        </svg>
+        <img src="image-removebg-preview.png" alt="yellow lamp on">
+    </header>
+
+    <main>
+
+        <style>
+            main
+            {
+                padding-top: 5vw;
+                padding-bottom: 2vw;
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+
+            .information h1
+            {
+                width: 80vw;
+
+                font-weight: 1000;
+
+                letter-spacing: 1px;
+
+                box-shadow: 
+                    inset -0.25em 0em #1C2E7F,
+                    inset 0em -0.35em #F9B233;
+            }
+
+            main hr
+            {
+                border: none;
+                height: 1px;
+                color: #FFFFFF;
+                background-color: #FFFFFF;
+
+                opacity: 1;
+            }
+        </style>
+
+        <div class="information">
+
+            <style>
+                .side
+                {
+                    display: flex;
+                    flex-direction: row;
+                }
+            </style>
+
+            <div class="wrap">
+                
+                <h1 id="quem">Quem somos?</h1>
+
+                <div class="toggle"></div>
+            </div>
+
+            <p id="texto-quem">Somos um grupo de voluntários que se dedica a promover eventos imersivos em Empreendedorismo, Oratória e Marketing, especialmente direcionados a crianças e pré-adolescentes que enfrentam desafios em suas comunidades.</p>
+        </div>
+
+        <hr>
+
+        <div class="information">
+
+            <div class="side">
+                <h1 id="missao">Nossa missão</h1>
+
+                <div class="wrap">
+                    <div class="toggle"></div>
+                </div>
+            </div>
+
+            <p id="texto-missao">Nossa missão é capacitar esses jovens para se tornarem verdadeiros agentes de mudança em suas próprias vidas e nas comunidades onde residem. Através de nossos programas, buscamos fornecer as ferramentas necessárias para que eles possam desenvolver habilidades essenciais, ampliar suas perspectivas e inspirar transformações positivas ao seu redor.</p>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <style>
+            footer p
+            {
+                color: #000000;
+
+                font-size: 4vw;
+            }
+        </style>
+
+        <div>
+            <h2>Contato</h2>
+
+            <p>M trailsofyouthdevelopment@gmail.com</p>
+        </div>
+
+        <div>
+            <a></a>
+
+            <a></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
