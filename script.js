@@ -1,11 +1,26 @@
-var wraps = document.querySelectorAll('.wrap');
+var informations = document.querySelectorAll('.information');
 
-wraps.forEach(function(wrap) {
-  var toggle = wrap.querySelector('.toggle');
-  var isPlus = false;
+informations.forEach(function(info) {
+  var toggle = info.querySelector('.toggle');
+  var isPlus = true;
 
-  wrap.addEventListener('click', function() {
+  var side = info.querySelector('.side');
+  side.addEventListener('click', function() {
     toggle.className = isPlus ? 'toggle' : 'toggle open';
     isPlus = !isPlus;
+
+    var paragraph = info.querySelector('.paragraph');
+    var title = info.querySelector(".tit");
+
+    if(isPlus)
+    {
+        paragraph.className = 'paragraph closed'
+        title.className = 'tit'    
+    }
+    else
+    {
+        paragraph.className = 'paragraph'
+        title.className = 'tit high'
+    }
   });
 });

@@ -1,4 +1,4 @@
-body
+html
 {
     font-family: 'Montserrat';
 }
@@ -25,6 +25,7 @@ header
 
     width: 100%;
 
+    max-height: 50vh;
     height: 80vw;
 }
 
@@ -35,6 +36,8 @@ header img
     align-self: center;
 
     height: 35vw;
+
+    max-height: 25vh;
 }
 
 @keyframes rotate {
@@ -48,15 +51,16 @@ header img
 
 .circle {
 
+    max-height: 50vh;
     width: 90vw;
 
     animation: rotate 20s linear infinite;
 }
 
 .circle text {
-    font-size: 6.5vw;
+    font-size: 20px;
     font-weight: 600;
-    letter-spacing: 2vw;
+    letter-spacing: 0.325em;
 }
 
 path {
@@ -106,12 +110,12 @@ footer
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
   }
   
   .toggle {
-    width: 25px;
-    height: 5px;
+
+    width: 5vh;
+    height: 1vh;
     background: #FFFFFF;
     position: relative;
     transition: .25s all cubic-bezier(.17,.67,.09,.97);
@@ -128,10 +132,10 @@ footer
   
   .toggle::after {
     content: "";
-    width: 25px;
+    width: 5vh;
     transition: .25s all cubic-bezier(.17,.67,.09,.97);
     transition-delay: .1s;
-    height: 5px;
+    height: 1vh;
     position: absolute;
     opacity: 0;
     background: #FFFFFF;
